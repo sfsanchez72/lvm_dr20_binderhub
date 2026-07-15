@@ -36,6 +36,12 @@ source .bashrc
 # Clone the following repository
 git clone https://github.com/sfsanchez72/lvm_dr20_binderhub
 
+# Run the following script in the terminal
+
+python create_netrc.py
+
+
+
 # Now you can proceed with the different notebooks
 
 
