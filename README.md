@@ -18,8 +18,10 @@ Open a terminal and run the following commands
 
 pip install --user --upgrade ipympl
 
-conda install conda-forge::gdown
+python -m pip install --user gdown
+python -m pip install --user rsync
 
+conda install conda-forge::gdown
 conda install -c conda-forge rsync
 
 conda create \
@@ -27,6 +29,12 @@ conda create \
   -p "$HOME/.conda/envs/rsync" \
   -c conda-forge \
   rsync
+  
+conda create \
+  --override-channels \
+  -c conda-forge \
+  gdown
+
   
 
 echo 'export PATH="$HOME/.local/bin:$HOME/.conda/envs/rsync/bin/:$PATH"' >> ~/.bashrc
