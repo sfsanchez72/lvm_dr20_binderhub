@@ -19,9 +19,11 @@ Open a terminal and run the following commands
 pip install --user --upgrade ipympl
 
 python -m pip install --user gdown
+
 python -m pip install --user rsync
 
 conda install conda-forge::gdown
+
 conda install -c conda-forge rsync
 
 conda create \
